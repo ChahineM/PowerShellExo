@@ -1,0 +1,23 @@
+
+    Directory: /home/chahine/EvenFolder
+
+UnixMode         User Group         LastWriteTime         Size Name
+--------         ---- -----         -------------         ---- ----
+-rw-rw-r--    chahine chahine     3/10/2025 12:53            0 File10
+-rw-rw-r--    chahine chahine     3/10/2025 12:53            0 File2
+-rw-rw-r--    chahine chahine     3/10/2025 12:53            0 File4
+-rw-rw-r--    chahine chahine     3/10/2025 12:53            0 File6
+-rw-rw-r--    chahine chahine     3/10/2025 12:53            0 File8
+
+    Directory: /home/chahine/OddFolder
+
+UnixMode         User Group         LastWriteTime         Size Name
+--------         ---- -----         -------------         ---- ----
+-rw-rw-r--    chahine chahine     3/10/2025 12:53            0 File1
+-rw-rw-r--    chahine chahine     3/10/2025 12:53            0 File3
+-rw-rw-r--    chahine chahine     3/10/2025 12:53            0 File5
+-rw-rw-r--    chahine chahine     3/10/2025 12:53            0 File7
+-rw-rw-r--    chahine chahine     3/10/2025 12:53            0 File9
+-rw-rw-r--    chahine chahine     3/10/2025 13:13         6914 historique.txt
+-rw-rw-r--    chahine chahine     3/10/2025 13:15          525 listing.txt
+

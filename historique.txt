@@ -1,0 +1,138 @@
+
+  Id     Duration CommandLine
+  --     -------- -----------
+   1        0.145 . $args[0]
+   2        0.044 Get-Help Get-Process
+   3        0.030 Get-Help Get-Process
+   4        0.056 Get-Help Get-Process
+   5        0.027 Get-Help Get-Process
+   6        0.020 Get-Help Get-Process -Online
+   7        0.051 Get-Help Get-Process -Online
+   8        4.429 Find-Command cp
+   9        0.681 Find-Command copy
+  10        0.343 Find-Command Copy-Item
+  11        0.019 Get-Command Copy
+  12        0.086 Get-Command Location
+  13        0.085 Get-Command Remove
+  14        0.002 Get-Command copy
+  15        0.111 Get-Command *copy*
+  16        0.033 Get-Command *remove*
+  17        0.014 Get-Command *location*
+  18        0.088 Get-Command *help*
+  19        0.044 Get-Command *history*
+  20        0.026 Get-Command *alias*
+  21        0.028 Get-Command *content*
+  22        0.008 Get-Location
+  23        0.021 Get-Host
+  24        0.001 Get-Host
+  25        0.023 Set-Location -Path C:\
+  26        0.025 Set-Location -Path C:\
+  27        0.000 Set-Location -Path /
+  28        0.000 Get-Location
+  29        0.027 New-Item -Path Temp -ItemType Directory
+  30        0.033 New-Item -Path Temp -ItemType Directory
+  31        0.021 New-Item -Path Temp -ItemType Directory
+  32        0.036 New-Item -Path ~/Temp -ItemType Directory
+  33        0.031 Set-Location Temp
+  34        0.001 Set-Location ~/Temp
+  35        0.003 New-Item -Path Rep1 -ItemType Directory
+  36        0.003 New-Item -Path Rep2 -ItemType Directory
+  37        0.003 Get-ChildItem
+  38        0.010 New-Item -Path file1 -ItemType File
+  39        0.002 New-Item -Path file2 -ItemType File
+  40        0.004 New-Item -Path file3 -ItemType File
+  41        0.004 Move-Item -Path file1 -Destination Rep1
+  42        0.003 Get-ChildItem
+  43        0.006 Get-ChildItem -Recurse
+  44        0.005 Move-Item -Path Rep1 -Destination Rep2
+  45        0.005  Get-ChildItem -recurse
+  46        0.005 Remove-Item -Path file3
+  47        0.002 Remove-Item Rep2 -Recurse
+  48        0.004  Get-ChildItem
+  49        0.007  Get-ChildItem -recurse
+  50        0.034  -ItemType File -Path C:\FolderTest1 -Name File3
+  51        0.030 10New-Item -ItemType File -Path C:\FolderTest1 -Name File4
+  52        0.037 11New-Item -ItemType File -Path C:\FolderTest1 -Name File5
+  53        0.002 12#Création de fichier vide dans le dossier c:\FolderTest2
+  54        0.045 13$Count = 6
+  55        0.060 14Do
+  56        0.000 15{…
+  57        0.053 19While ($Count -lt 11)
+  58        0.024 Set-Location -Path C:\
+  59        0.000 #Une écriture possible pour la création d'un dossier
+  60        0.034 New-Item -ItemType Directory -Path C:\ -Name FolderTest1
+  61        0.003 #Une autre écriture possible pour la création d'un dossier
+  62        0.043 New-Item -ItemType Directory -Path C:\FolderTest2
+  63        0.000 #Création de fichier vide dans le dossier c:\FolderTest
+  64        0.024 New-Item -ItemType File -Path C:\FolderTest1 -Name File1
+  65        0.013 New-Item -ItemType File -Path C:\FolderTest1 -Name File2
+  66        0.020 New-Item -ItemType File -Path C:\FolderTest1 -Name File3
+  67        0.016 New-Item -ItemType File -Path C:\FolderTest1 -Name File4
+  68        0.024 New-Item -ItemType File -Path C:\FolderTest1 -Name File5
+  69        0.000 #Création de fichier vide dans le dossier c:\FolderTest2
+  70        0.000 $Count = 6
+  71        0.001 Set-Location -Path /
+  72        0.000 Set-Location -Path /
+  73        0.000 #Une écriture possible pour la création d'un dossier
+  74        0.022 New-Item -ItemType Directory -Path / -Name FolderTest1
+  75        0.000 #Une autre écriture possible pour la création d'un dossier
+  76        0.012 New-Item -ItemType Directory -Path /FolderTest2
+  77        0.000 #Création de fichier vide dans le dossier c:\FolderTest
+  78        0.026 New-Item -ItemType File -Path /FolderTest1 -Name File1
+  79        0.026 New-Item -ItemType File -Path /FolderTest1 -Name File2
+  80        0.025 New-Item -ItemType File -Path /FolderTest1 -Name File3
+  81        0.023 New-Item -ItemType File -Path /FolderTest1 -Name File4
+  82        0.023 New-Item -ItemType File -Path /FolderTest1 -Name File5
+  83        0.000 #Création de fichier vide dans le dossier c:\FolderTest2
+  84        0.000 $Count = 6
+  85        0.040 Do…
+  86        0.021 New-Item -ItemType Directory -Path / -Name FolderTest1
+  87        0.003 New-Item -ItemType Directory -Path ~/ -Name FolderTest1
+  88        0.004 New-Item -ItemType Directory -Path ~/FolderTest2
+  89        0.003 New-Item -ItemType File -Path ~/FolderTest1 -Name File1
+  90        0.005 New-Item -ItemType File -Path ~/FolderTest1 -Name File2
+  91        0.002 New-Item -ItemType File -Path ~/FolderTest1 -Name File3
+  92        0.005 New-Item -ItemType File -Path ~/FolderTest1 -Name File4
+  93        0.006 New-Item -ItemType File -Path ~/FolderTest1 -Name File5
+  94        0.000 $Count = 6
+  95        0.015 Do…
+  96        0.015 get-childitem
+  97        0.044 get childitem -path ~/
+  98        0.038 get-childitem -path ~/
+  99        0.021 get-childitem -path ~/Foldertest1
+ 100        0.016 get-childitem -path ~/FolderTest1
+ 101        0.010 get-childitem -path ~/FolderTest2
+ 102        0.005 New-Item -ItemType Directory -Path ~/EvenFolder
+ 103        0.008 New-Item -ItemType Directory -Path ~/OddFolder
+ 104        0.004 Set-Location -Path ~/FolderTest1
+ 105        0.029 Move-Item -Path File2 File4 File6 File8 File10 -Destination ~/EvenFo…
+ 106        0.056 Move-Item -Path File2;File4 File6 File8 File10 -Destination ~/EvenFo…
+ 107        0.128 Move-Item -Path File2;File4;File6;File8;File10 -Destination ~/EvenFo…
+ 108        0.039 Move-Item -Path File2,File4,File6,File8,File10 -Destination ~/EvenFo…
+ 109        0.032 Move-Item -Path File2 -Destination ~/EvenFolder
+ 110        0.007 get-childitem
+ 111        0.003 set-location -path ~/
+ 112        0.002 set-location -path ~/EvenFolder
+ 113        0.008 get-childitem
+ 114        0.002 set-location -path ~/FolderTest2
+ 115        0.018 Move-Item -Path File6 File8 File10 -Destination ~/EvenFolder
+ 116        0.004 get-childitem
+ 117        0.070 Move-Item -Path File6;File8;File10 -Destination ~/EvenFolder
+ 118        0.003 get-childitem
+ 119        0.006 Move-Item -Path File6,File8,File10 -Destination ~/EvenFolder
+ 120        0.005 get-childitem
+ 121        0.025 Move-Item -Path File7,Fil9 -Destination ~/OddFolder
+ 122        0.025 Move-Item -Path File7,File9 -Destination ~/OddFolder
+ 123        0.002 get-childitem
+ 124        0.001 Set-location -path ~/FolderTest1
+ 125        0.006 get-childitem
+ 126        0.003 Move-Item -Path File1,File3,File5 -Destination ~/OddFolder
+ 127        0.002 Set-location -path ~/EvenFolder
+ 128        0.006 get-childitem
+ 129        0.003 Set-location -path ~/OddFolder
+ 130        0.010 get-childitem
+ 131        0.054 Get-History > historique.txt
+ 132        0.012 Get-ChildItem -Path *Folder* -Recurse > listing.txt
+ 133        0.007 Get-ChildItem -Path ~/EvenFolder -Recurse > listing.txt
+ 134        0.001 Set-location -path ~/
+
